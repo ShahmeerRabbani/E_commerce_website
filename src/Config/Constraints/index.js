@@ -1,0 +1,1 @@
+export const API_URL = 'https://e-commerce-backend-eta-beryl.vercel.app';

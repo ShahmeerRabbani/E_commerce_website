@@ -1,0 +1,62 @@
+.cardBox{
+    height: 350px;
+    width: 100%; /* Automatically adapts to grid column width */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    position: relative;
+}
+
+.cardImg{
+    flex: 2;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.cardImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cate{
+    position: absolute;
+    font-size: 12px;
+    width: auto;
+    text-transform: capitalize;
+    background-color: #FFC107;
+}
+
+.cardContext{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: teal; */
+}
+
+.cardBox:hover button{
+    display: block;
+}
+
+.ad_btn{
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+    background-color: #FFC107;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    display: none;
+}
+
+.ad_btn:hover{
+    background-color: #c29307;
+}
