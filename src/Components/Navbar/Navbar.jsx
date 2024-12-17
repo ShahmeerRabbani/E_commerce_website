@@ -17,7 +17,8 @@ const Navbar = ({refresh}) => {
 
     const handleBadge = () => {
         const getItem = JSON.parse(sessionStorage.getItem('cartData'))
-    setBadge(getItem == [] ? 0 : getItem.length)
+        console.log(getItem)
+    setBadge(getItem == null ? 0 : getItem.length)
     // setBadge(getItem.length)
     }
 
