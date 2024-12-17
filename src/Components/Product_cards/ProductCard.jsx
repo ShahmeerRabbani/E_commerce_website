@@ -14,8 +14,6 @@ const ProductCard = ({ item, id, name, img, rate, price}) => {
     navigate(`/productDetail/${id}`, {state: item})
   }
 
-  console.log(API_URL, img)
-
   return (
     <div className={styles.cardBox}>
     <div className={styles.cardImg}>
